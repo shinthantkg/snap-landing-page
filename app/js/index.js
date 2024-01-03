@@ -5,6 +5,8 @@ document.addEventListener("click", (event) => {
     targetElement = event.target.parentElement;
   }
 
+  const targetDownArrow = targetElement.children[0];
+  const targetUpArrow = targetElement.children[1];
   const targetDataset = targetElement.dataset;
   const targetDropDownCheck = targetDataset.dropdown;
   const firstDropDown = document.querySelector(".dropdown--first");
@@ -13,9 +15,13 @@ document.addEventListener("click", (event) => {
   const toggleDropdown = (dropdown, toggleValue) => {
     if (toggleValue === "off") {
       dropdown.classList.remove("hidden");
+      targetDownArrow.classList.add("hidden");
+      targetUpArrow.classList.remove("hidden");
       targetDataset.toggle = "on";
     } else {
       dropdown.classList.add("hidden");
+      targetDownArrow.classList.remove("hidden");
+      targetUpArrow.classList.add("hidden");
       targetDataset.toggle = "off";
     }
   };
