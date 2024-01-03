@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 
 html {
   font-size: 100%;
@@ -38,6 +39,12 @@ a:visited {
 
   &-fd-cr {
     flex-direction: column-reverse;
+
+    &-mobile {
+      @include breakpoint-down(78.125em) {
+        flex-direction: column-reverse;
+      }
+    }
   }
 
   &-jc-c {
@@ -51,48 +58,32 @@ a:visited {
   &-ai-c {
     align-items: center;
   }
+
+  &-no-mobile {
+    @include breakpoint-down(53.0625em) {
+      display: block;
+    }
+  }
 }
 
 .hidden {
   display: none;
+
+  &-desktop {
+    @include breakpoint-up(53.125em) {
+      display: none;
+    }
+  }
+
+  &-mobile {
+    @include breakpoint-down(53.0625em) {
+      display: none;
+    }
+  }
 }
 
 .no-select {
   user-select: none;
-}
-
-.mt {
-  &-50 {
-    margin-top: 50px;
-  }
-
-  &-100 {
-    margin-top: 100px;
-  }
-}
-
-.mb {
-  &-30 {
-    margin-bottom: 1.875rem;
-  }
-
-  &-60 {
-    margin-bottom: 3.75rem;
-  }
-
-  &-100 {
-    margin-bottom: 6.25rem;
-  }
-
-  &-130 {
-    margin-bottom: 8.125rem;
-  }
-}
-
-.mr {
-  &-150 {
-    margin-right: 9.375rem;
-  }
 }
 
 .button {

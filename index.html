@@ -22,13 +22,15 @@
 
     <script src="./app/js/index.js" defer></script>
   </head>
+
   <body>
     <header class="header">
-      <nav class="nav flex flex-jc-sb flex-ai-c no-select">
-        <div class="flex flex-ai-c">
+      <nav class="nav flex flex-jc-sb flex-ai-c flex-no-mobile no-select">
+        <div class="flex flex-jc-sb flex-ai-c">
           <a href="/"><img src="./images/logo.svg" alt="Snap" /></a>
+          <a href="/"><img class="hidden-desktop" src="./images/icon-menu.svg" alt=""></a>
 
-          <ul class="nav__list flex">
+          <ul class="nav__list flex hidden-mobile">
             <li class="nav__item">
               <a class="nav__link" data-dropdown="1" data-toggle="off">Features <img class="dropdown__arrow dropdown__arrow--down" src="./images/icon-arrow-down.svg" data-dropdown="1" alt="" /> <img class="dropdown__arrow dropdown__arrow--up hidden" src="./images/icon-arrow-up.svg" alt=""></a>
             </li>
@@ -73,7 +75,7 @@
           </ul>
         </div>
 
-        <div>
+        <div class="hidden-mobile">
           <ul class="nav__list flex">
             <li class="nav__item"><a class="nav__link" href="/">Login</a></li>
             <li class="nav__item">
@@ -85,26 +87,29 @@
     </header>
 
     <main class="intro">
-      <div class="flex flex-jc-c mb-130">
-        <div class="flex flex-fd-c mt-50 mr-150">
-          <h1 class="intro__heading mb-30">Make remote work</h1>
+      <div class="intro__wrapper flex flex-jc-c flex-fd-cr-mobile">
+        <div class="intro__textual-content flex flex-fd-c">
+          <h1 class="intro__heading">Make remote work</h1>
 
-          <p class="intro__text mb-60">
+          <p class="intro__text">
             Get your team in sync, no matter your location. Streamline
             processes, create team rituals, and watch productivity soar.
           </p>
 
-          <a class="button button--dark mb-100" href="/">Learn more</a>
+          <a class="button button--dark" href="/">Learn more</a>
 
-          <div class="flex flex-jc-sb flex-ai-c">
-            <img src="./images/client-databiz.svg" alt="Databaiz" />
-            <img src="./images/client-audiophile.svg" alt="Audiophile" />
-            <img src="./images/client-meet.svg" alt="Meet" />
-            <img src="./images/client-maker.svg" alt="Maker" />
+          <div class="testimonials flex flex-jc-sb flex-ai-c">
+            <img class="testimonials__image" src="./images/client-databiz.svg" alt="Databiz" />
+            <img class="testimonials__image" src="./images/client-audiophile.svg" alt="Audiophile" />
+            <img class="testimonials__image" src="./images/client-meet.svg" alt="Meet" />
+            <img class="testimonials__image" src="./images/client-maker.svg" alt="Maker" />
           </div>
         </div>
 
-        <div class="intro__image"></div>
+        <picture>
+          <source srcset="./images/image-hero-mobile.png" media="(max-width: 62.5em)">
+          <img class="intro__image" src="./images/image-hero-desktop.png" alt="Man holding a laptop">
+        </picture>
       </div>
     </main>
   </body>

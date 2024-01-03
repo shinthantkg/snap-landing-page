@@ -2,31 +2,80 @@
 @import "mixins";
 
 .intro {
+  @include breakpoint-down(78.125em) {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__wrapper {
+    margin-bottom: 3.125rem;
+  }
+
+  &__textual-content {
+    margin-top: 3.125rem;
+    margin-right: 9.375rem;
+    
+    @include breakpoint-down(78.125em) {
+      margin-top: 1.25em;
+      margin-right: 0;
+      text-align: center;
+
+      .button {
+        margin: 0 auto;
+      }
+    }
+  }
+
   &__heading {
     color: $black;
-    font-size: $fs-lg;
+    font-size: $fs-xlg;
+    font-weight: $fw-bold;
+    margin-bottom: 0;
     width: 33.125rem;
+
+    @include breakpoint-down(78.125em) {
+      font-size: $fs-lg;
+      width: auto;
+    }
   }
 
   &__text {
     color: $gray;
     font-size: $fs-med;
     line-height: 1.5;
+    margin-bottom: 3.75rem;
     width: 28.125rem;
+
+    @include breakpoint-down(62.5em) {
+      font-size: $fs-sm;
+      margin-bottom: 1.875rem;
+      width: auto;
+    }
   }
 
   &__image {
-    @include breakpoint-up(large) {
-      background-image: url("../../images/image-hero-desktop.png");
-      background-size: cover;
+    @include breakpoint-up(62.5625em) {
       width: 30em;
       height: 40em;
     }
 
-    @include breakpoint-down(medium) {
-      background-image: url("../../images/image-hero-mobile.png");
-      background-size: cover;
+    @include breakpoint-down(62.5em) {
       width: 100%;
+    }
+  }
+}
+
+.testimonials {
+  margin-top: 6.875rem;
+  padding: 0 1em;
+
+  @include breakpoint-down(62.5em) {
+    margin-top: 1.875rem;
+  }
+
+  &__image {
+    @include breakpoint-down(62.5em) {
+      width: 20%;
     }
   }
 }
