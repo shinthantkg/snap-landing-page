@@ -5,8 +5,6 @@ document.addEventListener("click", (event) => {
     targetElement = event.target.parentElement;
   }
 
-  console.log(targetElement);
-
   const targetDataset = targetElement.dataset;
   const targetDropDownCheck = targetDataset.dropdown;
   const firstDropDown = document.querySelector(".dropdown--first");
