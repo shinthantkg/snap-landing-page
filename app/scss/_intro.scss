@@ -1,0 +1,32 @@
+@import "variables";
+@import "mixins";
+
+.intro {
+  &__heading {
+    color: $black;
+    font-size: $fs-lg;
+    width: 33.125rem;
+  }
+
+  &__text {
+    color: $gray;
+    font-size: $fs-med;
+    line-height: 1.5;
+    width: 28.125rem;
+  }
+
+  &__image {
+    @include breakpoint-up(large) {
+      background-image: url("../../images/image-hero-desktop.png");
+      background-size: cover;
+      width: 30em;
+      height: 40em;
+    }
+
+    @include breakpoint-down(medium) {
+      background-image: url("../../images/image-hero-mobile.png");
+      background-size: cover;
+      width: 100%;
+    }
+  }
+}

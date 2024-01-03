@@ -1,0 +1,118 @@
+@import "variables";
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $white;
+  font-family: $font;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+
+// Helper Classes
+.flex {
+  display: flex;
+
+  &-fd-rr {
+    flex-direction: row-reverse;
+  }
+
+  &-fd-c {
+    flex-direction: column;
+  }
+
+  &-fd-cr {
+    flex-direction: column-reverse;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.mt {
+  &-50 {
+    margin-top: 50px;
+  }
+
+  &-100 {
+    margin-top: 100px;
+  }
+}
+
+.mb {
+  &-30 {
+    margin-bottom: 1.875rem;
+  }
+
+  &-60 {
+    margin-bottom: 3.75rem;
+  }
+
+  &-100 {
+    margin-bottom: 6.25rem;
+  }
+
+  &-130 {
+    margin-bottom: 8.125rem;
+  }
+}
+
+.mr {
+  &-150 {
+    margin-right: 9.375rem;
+  }
+}
+
+.button {
+  border-radius: 0.625em;
+  padding: 0.75em 1.375em;
+  border: 0.125rem solid;
+  width: 8.75rem;
+  transition: all 0.2s ease-in;
+
+  &--light {
+    color: $gray;
+    background-color: $white;
+    border-color: $gray;
+  }
+
+  &--dark {
+    color: $white;
+    background-color: $black;
+    border-color: $black;
+  }
+
+  &:hover {
+    background-color: $white;
+    border-color: $black;
+    color: $black;
+  }
+}

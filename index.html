@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/style.css" />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <script src="./app/js/index.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav flex flex-jc-sb flex-ai-c">
+        <div class="flex flex-ai-c">
+          <a href="/"><img src="./images/logo.svg" alt="Snap" /></a>
+
+          <ul class="nav__list flex">
+            <li class="nav__item">
+              <a class="nav__link" data-dropdown="1" data-toggle="off">Features <img class="dropdown__arrow" src="./images/icon-arrow-down.svg" data-dropdown="1" alt="" /> <img class="dropdown__arrow hidden" src="./images/icon-arrow-up.svg" alt=""></a>
+            </li>
+
+            <div class="dropdown dropdown--first hidden">
+              <ul class="dropdown__list">
+                <li class="dropdown__item">
+                  <a class="dropdown__link dropdown__icon dropdown__icon--todo" href="/">Todo List</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link dropdown__icon dropdown__icon--calendar" href="/">Calendar</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link dropdown__icon dropdown__icon--reminders" href="/">Reminders</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link dropdown__icon dropdown__icon--planning" href="/">Planning</a>
+                </li>
+              </ul>
+            </div>
+
+            <li class="nav__item">
+              <a class="nav__link" data-dropdown="2" data-toggle="off">Company <img class="dropdown__arrow" src="./images/icon-arrow-down.svg"alt="" /></a>
+            </li>
+
+            <div class="dropdown dropdown--second hidden">
+              <ul class="dropdown__list">
+                <li class="dropdown__item">
+                  <a href="/" class="dropdown__link">History</a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="/" class="dropdown__link">Our Team</a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="/" class="dropdown__link">Company</a>
+                </li>
+              </ul>
+            </div>
+
+            <li class="nav__item"><a class="nav__link" href="/">Careers</a></li>
+            <li class="nav__item"><a class="nav__link" href="/">About</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="nav__list flex">
+            <li class="nav__item"><a class="nav__link" href="/">Login</a></li>
+            <li class="nav__item">
+              <a class="nav__link button button--light" href="/">Register</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="intro">
+      <div class="flex flex-jc-c mb-130">
+        <div class="flex flex-fd-c mt-50 mr-150">
+          <h1 class="intro__heading mb-30">Make remote work</h1>
+
+          <p class="intro__text mb-60">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+
+          <a class="button button--dark mb-100" href="/">Learn more</a>
+
+          <div class="flex flex-jc-sb flex-ai-c">
+            <img src="./images/client-databiz.svg" alt="Databaiz" />
+            <img src="./images/client-audiophile.svg" alt="Audiophile" />
+            <img src="./images/client-meet.svg" alt="Meet" />
+            <img src="./images/client-maker.svg" alt="Maker" />
+          </div>
+        </div>
+
+        <div class="intro__image"></div>
+      </div>
+    </main>
+  </body>
+</html>

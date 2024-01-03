@@ -1,0 +1,80 @@
+@import "variables";
+
+.header {
+  padding: 2em 2.5em;
+}
+
+.nav {
+  &__list {
+    list-style: none;
+  }
+
+  &__item:not(:last-of-type) {
+    margin-right: 2.5em;
+  }
+
+  &__link {
+    color: $gray;
+    transition: all 0.2s ease-in;
+  }
+
+  &__link:hover {
+    color: $black;
+    cursor: pointer;
+  }
+}
+
+.dropdown {
+  background: $white;
+  border: 0.125em solid $white;
+  border-radius: 0.625em;
+  box-shadow: 0 0 0.3125em 0 rgba(0,0,0,0.45);
+  -webkit-box-shadow: 0 0 0.3125em 0 rgba(0,0,0,0.45);
+  -moz-box-shadow: 0 0 0.3125em 0 rgba(0,0,0,0.45);
+  padding: 1.25em;
+  position: absolute;
+  top: 5.625em;
+
+  &--first {
+    left: 6.875em;
+  }
+
+  &--second {
+    left: 290px;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  &__item:not(:last-of-type) {
+    margin-bottom: 0.9375em;
+  }
+
+  &__link {
+    color: $gray;
+  }
+
+  &__icon {
+    background-size: auto;
+    background-repeat: no-repeat;
+    padding-left: 1.875em;
+
+    &--todo {
+      background-image: url('../../images/icon-todo.svg');
+    }
+
+    &--calendar {
+      background-image: url('../../images/icon-calendar.svg');
+    }
+
+    &--reminders {
+      background-image: url('../../images/icon-reminders.svg');
+    }
+
+    &--planning {
+      background-image: url('../../images/icon-planning.svg');
+    }
+  }
+}
