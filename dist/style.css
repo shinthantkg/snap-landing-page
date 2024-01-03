@@ -48,6 +48,12 @@ a:visited {
   display: none;
 }
 
+.no-select {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
 .mt-50 {
   margin-top: 50px;
 }

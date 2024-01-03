@@ -57,6 +57,10 @@ a:visited {
   display: none;
 }
 
+.no-select {
+  user-select: none;
+}
+
 .mt {
   &-50 {
     margin-top: 50px;
