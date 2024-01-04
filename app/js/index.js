@@ -34,3 +34,9 @@ document.addEventListener("click", (event) => {
     console.log(targetDataset.toggle);
   }
 });
+
+document.addEventListener("click", (event) => {
+  if (event.target.classList.contains("menu-button")) {
+    document.querySelector(".side-bar").classList.remove("hidden");
+  }
+})
