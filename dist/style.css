@@ -176,7 +176,7 @@ a:visited {
   padding: 0.9375em;
 }
 .side-bar__section .dropdown__list .dropdown__item:not(:last-of-type) {
-  margin-bottom: 30px;
+  margin-bottom: 1.875em;
 }
 
 .dropdown {
