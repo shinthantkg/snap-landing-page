@@ -29,7 +29,10 @@
         <div class="flex flex-jc-sb flex-ai-c">
           <a href="/"><img src="./images/logo.svg" alt="Snap" /></a>
           <a
-            ><img class="menu-button hidden-desktop" src="./images/icon-menu.svg" alt=""
+            ><img
+              class="menu-button-open hidden-desktop"
+              src="./images/icon-menu.svg"
+              alt=""
           /></a>
 
           <ul class="nav__list flex hidden-mobile">
@@ -133,11 +136,11 @@
         <div class="side-bar hidden hidden-desktop">
           <div class="side-bar__section flex flex-fd-c">
             <div class="flex flex-jc-fe">
-              <a class="side-bar__menu-button hidden" href="/"
-                ><img src="./images/icon-menu.svg" alt=""
-              /></a>
-              <a class="side-bar__menu-button" href=""
-                ><img src="./images/icon-close-menu.svg" alt=""
+              <a
+                ><img
+                  class="side-bar__menu-button-close"
+                  src="./images/icon-close-menu.svg"
+                  alt=""
               /></a>
             </div>
 
@@ -160,39 +163,37 @@
                 /></a>
               </li>
 
-              <li class="nav__item">
-                <div>
-                  <ul class="dropdown__list">
-                    <li class="dropdown__item">
-                      <a
-                        class="dropdown__link dropdown__icon dropdown__icon--todo"
-                        href="/"
-                        >Todo List</a
-                      >
-                    </li>
-                    <li class="dropdown__item">
-                      <a
-                        class="dropdown__link dropdown__icon dropdown__icon--calendar"
-                        href="/"
-                        >Calendar</a
-                      >
-                    </li>
-                    <li class="dropdown__item">
-                      <a
-                        class="dropdown__link dropdown__icon dropdown__icon--reminders"
-                        href="/"
-                        >Reminders</a
-                      >
-                    </li>
-                    <li class="dropdown__item">
-                      <a
-                        class="dropdown__link dropdown__icon dropdown__icon--planning"
-                        href="/"
-                        >Planning</a
-                      >
-                    </li>
-                  </ul>
-                </div>
+              <li class="nav__item mobile-dropdown-first hidden">
+                <ul class="dropdown__list">
+                  <li class="dropdown__item">
+                    <a
+                      class="dropdown__link dropdown__icon dropdown__icon--todo"
+                      href="/"
+                      >Todo List</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a
+                      class="dropdown__link dropdown__icon dropdown__icon--calendar"
+                      href="/"
+                      >Calendar</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a
+                      class="dropdown__link dropdown__icon dropdown__icon--reminders"
+                      href="/"
+                      >Reminders</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a
+                      class="dropdown__link dropdown__icon dropdown__icon--planning"
+                      href="/"
+                      >Planning</a
+                    >
+                  </li>
+                </ul>
               </li>
 
               <li class="nav__item">
@@ -216,20 +217,18 @@
                 </a>
               </li>
 
-              <li class="nav__item">
-                <div>
-                  <ul class="dropdown__list">
-                    <li class="dropdown__item">
-                      <a href="/" class="dropdown__link">History</a>
-                    </li>
-                    <li class="dropdown__item">
-                      <a href="/" class="dropdown__link">Our Team</a>
-                    </li>
-                    <li class="dropdown__item">
-                      <a href="/" class="dropdown__link">Company</a>
-                    </li>
-                  </ul>
-                </div>
+              <li class="nav__item mobile-dropdown-second hidden">
+                <ul class="dropdown__list">
+                  <li class="dropdown__item">
+                    <a href="/" class="dropdown__link">History</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="/" class="dropdown__link">Our Team</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="/" class="dropdown__link">Company</a>
+                  </li>
+                </ul>
               </li>
 
               <li class="nav__item">
