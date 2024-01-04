@@ -150,6 +150,7 @@ a:visited {
   height: 100%;
   padding: 1.25em;
   right: 0;
+  overflow-y: auto;
 }
 .side-bar__section :nth-child(2) .nav__item:not(:last-of-type) {
   margin-bottom: 1.875em;
